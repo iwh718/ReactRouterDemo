@@ -1,0 +1,139 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    padding: 10px;
+    background: #43c191;
+    display: flex;
+    flex-direction: row;
+}
+.nav .nav-li{
+    width: 100%;
+    text-align: center;
+}
+.nav a{
+    border: none;
+    text-decoration: none;
+    color: #ffffff;
+}
+.nav-li-active{
+    background: #369570;
+    padding: 10px;
+}
+.com{
+
+
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    -webkit-box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.1);
+    -moz-box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.1);
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.1);
+}
+.com p{
+    color: #fff;
+}
+
+.c_error{
+
+    background: #ff7716;
+}
+.back{
+    cursor: pointer;
+}
+/**
+动画
+ */
+
+.c_index{
+    background: #abc11f;
+   transition-timing-function: ease-in;
+    animation-fill-mode:forwards;
+    animation-name: color0;
+    animation-duration: 2s;
+}
+.c1{
+    background: #43c191;
+    transition-timing-function: linear;
+    animation-fill-mode:forwards;
+    animation-name: color1;
+    animation-duration: 2s;
+
+}
+.c2{
+    background: #c10d18;
+    transition-timing-function: linear;
+    animation-fill-mode:forwards;
+    animation-name: color2;
+    animation-duration: 2s;
+
+}
+.c3{
+    transition-timing-function: linear;
+    animation-fill-mode:forwards;
+    animation-name: color3;
+    animation-duration: 2s;
+
+}
+@keyframes color1 {
+    from{
+        transform: translateY(300px);
+        background: #43c191;
+        width: 100%;
+        margin-left: 0;
+    }
+    to{
+        transform: translateY(0);
+        background: #3cc317;
+        width: 50%;
+        margin-left: 25%;
+    }
+}
+@keyframes color0 {
+     from{
+         transform: translateX(-500px);
+         background: #abc11f;
+         width: 100%;
+         margin-left: 0;
+     }
+     to{
+         transform: translateX(0);
+         background: #c32533;
+         width: 50%;
+         margin-left: 25%;
+     }
+ }
+@keyframes color2 {
+    from{
+        transform: translate3d(90,90,90px);
+        background: #abc11f;
+        width: 100%;
+        margin-left: 0;
+    }
+    to{
+        transform: translate3d(0,0,0px);
+        background: #c32533;
+        width: 50%;
+        margin-left: 25%;
+    }
+}
+@keyframes color3 {
+    10%{
+        transform: translateX(-500px);
+        background: #abc11f;
+        width: 100%;
+        margin-left: 0;
+    }
+    40%{
+        transform: translateX(0);
+        background: #416fc1;
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    100%{
+        background: #416fc1;
+        width: 100%;
+    }
+}

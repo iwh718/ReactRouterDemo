@@ -1,0 +1,31 @@
+{
+  "name": "react_router_demo",
+  "version": "1.1.1",
+  "description": "react router demo",
+  "main": "index.js",
+  "author": "iwh",
+  "license": "ISC",
+  "babel": {
+    "presets": [
+      "env",
+      "react"
+    ]
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1"
+  },
+  "scripts": {
+    "gyA": "babel ./dev -d ./rel",
+    "pregyA": "echo begin babel...",
+    "postgyA": "browserify ./rel/App.js -o ./bundle.js"
+  },
+  "dependencies": {
+    "events": "^3.0.0",
+    "history": "^1.13.0",
+    "react": "^15.3.0",
+    "react-addons-css-transition-group": "^15.6.2",
+    "react-dom": "^15.3.0",
+    "react-router": "^1.0.0"
+  }
+}
